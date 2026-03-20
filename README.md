@@ -11,8 +11,8 @@ something in the future that I can maintain for many years to come still, I deci
 make something new and hopefully easier to maintain but also allow me to help with decision 
 making and maintaining the bigger project uvloop.
 
-This library plans to be a more toyable eventloop to help reasearch ways to fix 
-bugs if any are to be found in the bigger project uvloop. 
+This library plans to be a bit more toyable to help reasearch ways to fix 
+bugs if any are to be found in the bigger library uvloop. 
 
 I wanted to continue to have something even after winloop is to be deprecated and terminated
 this will be a new journey and python library that I am excited on starting soon.
