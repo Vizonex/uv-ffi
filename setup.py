@@ -127,13 +127,6 @@ class uv_build_ext(build_ext):
             self.compiler.add_library("Ole32")
         else:
             raise NotImplementedError("TODO")
-        
-            
-
-
-        
-
-
 
     def build_extensions(self):
         # Use system libuv library if requested
