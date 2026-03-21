@@ -90,13 +90,7 @@ class uv_build_ext(build_ext):
             if "mingw" in self.compiler.compiler_type:
                 cmake_args.extend(["-G", "MinGW Makefiles"])
 
-            # Handle static runtime if needed
-            if hasattr(self, "compiler") and hasattr(self.compiler, "compile_options"):
-                for flag in self.compiler.compile_options:
-                    if "/MT" in str(flag):
-                        cmake_args.append("-DCARES_MSVC_STATIC_RUNTIME=ON")
-                        break
-
+       
         subprocess.check_call(
             [cmake_cmd, os.path.abspath(uv_dir)] + cmake_args, cwd=build_temp
         )
